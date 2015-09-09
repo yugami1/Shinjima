@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ログイン|shinjima.com</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="loginstyle.css">
+
+  </head>
+  <body>
+      <div class="page-header">
+          <h1>Shinjima.com<small> supported by Hickies</small></h1>
+      </div>
+      <header>
+         <nav class="navbar navbar-default">
+         <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=""><!--タイトル--></a>
+          </div>
+
+          <div class="collapse navbar-collapse target">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="top.html">ホーム</a></li>
+              <li><a href="register.html">新規登録</a></li>
+              <li class="active"><a href="login.html">ログイン</a></li>
+              <li><a href="bite.html">バイト募集</a></li>
+            </ul>
+          </div>
+          </div>
+        </nav>
+      </header>
+
+<!--新たに設定しなくてはならない-->
+      <div class="page-header">
+        <h1>ログイン</h1>
+      </div>
+      <form action="" method="post">
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label for="name" maxlength="20">名前</label>
+            <input type="text" class="form-control" id="name"  size="50"maxlength="30" placeholder="name">
+          </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div>
+         
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" value="@doshisha4.ac.jp" maxlength="30" placeholder="mail address">
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+        </div>
+        <button type="submit" class="btn btn-info">送信<i class="glyphicon glyphicon-ok"></i></button>
+      </form>
+    
+
+
+  <footer align="center">
+    <a href="register.html" target="_blank">新規登録</a>
+    <a href="login.html" target="_blank">ログイン</a>
+    <a href="bite.html" target="_blank">バイト募集</a>
+    <a href="top.html">ホームへ</a>
+    <p>&copy;Copyright Shinjima.com all rights reserved.</p>
+  </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
