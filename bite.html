@@ -5,129 +5,146 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>バイト情報記入欄|Shinjima.com</title>
+    <title>バイト情報記入欄|Shinzima.com</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="bitestyle1.css">
-
+    <link rel="stylesheet" href="topstyle1.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
+
   <body>
-      <div class="page-header">
+     <!--<div class="page-header">
         <h1>Shinjima.com<small> supported by Hickies</small></h1>
-      </div>
+    </div>-->
     <header>
        <nav class="navbar navbar-default">
-       <div class="container">
-        <div class="navbar-header">
-          <button class="navbar-toggle" data-toggle="collapse" data-target=".target">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href=""></a>
-        </div>
+         <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="top.html"><img src="logo.jpg"></a>
+          </div>
 
-        <div class="collapse navbar-collapse target">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="top.html">ホーム</a></li>
-            <li><a href="register.html">新規登録</a></li>
-            <li><a href="login.html">ログイン</a></li>
-            <li class="active"><a href="bite.html">バイト募集</a></li>
-          </ul>
-        </div>
+          <div class="collapse navbar-collapse target">
+            <ul class="nav navbar-nav">
+              <li><a href="register.html">新規登録</a></li>
+              <li><a href="login.html">ログイン</a></li>
+              <li  class="active"><a href="bite.html">バイト募集</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
-
-
-    <article>
-      <div class="page-header">
-        <h1>バイト情報記入欄</h1>
+    <div id="main" class="container">
+      <h1>新規登録</h1>
+      <form action="" method="post">
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label>カテゴリ:</label>
+            <input type="radio" name="category" value="hikensya" id="hikensya"><label for="hikensya">被験者</label>
+            <input type="radio" name="category" value="seikyou" id="seikyou"><label for="seikyou">生協</label>
+            <input type="radio" name="category" value="PC" id="PC"><label for="PC">PCバイト</label>
+            <input type="radio" name="category" value="hozyo" id="hozyo"><label for="hozyo">授業補助</label>
+            <input type="radio" name="category" value="event" id="event"><label for="event">イベント</label>
+            <input type="radio" name="category" value="sonohoka" id="sonohoka"><label for="sonohoka">その他</label>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label for="zyoukenn">募集対象(条件)</label>
+            <div class="input-group">
+              <input type="text" class="form-control" value="全学生" placeholder="募集対象" aria-describedby="sizing-addon2"　>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label>実施場所:</label>
+            <input type="checkbox" name="school" value="kyotanabe" id="kyotnabe"><label for="kyotanabe">京田辺</label>
+            <input type="checkbox" name="school" value="imadegawa" id="imadegawa"><label for="imadegawa">今出川</label>
+          </div>
+        </div>
+    <!--院生の時間割に変更する必要あり-->
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label>実施期間</label>
+            <table rules="groups">
+              <thead>
+                <tr>
+                  <th>時間/曜日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>9:00~10:30</td><td><input type="checkbox" name="zissi" value="getu1"checked id="getu1"></td><td><input type="checkbox" name="zissi" value="ka1"checked id="ka1"></td><td><input type="checkbox" name="zissi" value="sui1"checked id="sui1"></td><td><input type="checkbox" name="zissi" value="moku1"checked id="moku1"></td><td><input type="checkbox" name="zissi" value="kinn1"checked id="kinn1"></td><td><input type="checkbox" name="zissi" value="do1" checked id="do1"></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>10:45~12:15</td><td><input type="checkbox" name="zissi" value="getu2"checked id="getu2"></td><td><input type="checkbox" name="zissi" value="ka2"checked id="ka2"></td><td><input type="checkbox" name="zissi" value="sui2"checked id="sui2"></td><td><input type="checkbox" name="zissi" value="moku2"checked id="moku2"></td><td><input type="checkbox" name="zissi" value="kinn2"checked id="kinn2"></td><td><input type="checkbox" name="zissi" value="do2" checked id="do2"></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>13:10~14:40</td><td><input type="checkbox" name="zissi" value="getu3"checked id="getu3"></td><td><input type="checkbox" name="zissi" value="ka3"checked id="ka3"></td><td><input type="checkbox" name="zissi" value="sui3"checked id="sui3"></td><td><input type="checkbox" name="zissi" value="moku3"checked id="moku3"></td><td><input type="checkbox" name="zissi" value="kinn3"checked id="kinn3"></td><td><input type="checkbox" name="zissi" value="do3" checked id="do3"></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>14:55~16:25</td><td><input type="checkbox" name="zissi" value="getu4"checked id="getu4"></td><td><input type="checkbox" name="zissi" value="ka4"checked id="ka4"></td><td><input type="checkbox" name="zissi" value="sui4"checked id="sui4"></td><td><input type="checkbox" name="zissi" value="moku4"checked id="moku4"></td><td><input type="checkbox" name="zissi" value="kinn4"checked id="kinn4"></td><td><input type="checkbox" name="zissi" value="do4" checked id="do4"></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>16:40~18:10</td><td><input type="checkbox" name="zissi" value="getu5"checked id="getu5"></td><td><input type="checkbox" name="zissi" value="ka5"checked id="ka5"></td><td><input type="checkbox" name="zissi" value="sui5"checked id="sui5"></td><td><input type="checkbox" name="zissi" value="moku5"checked id="moku5"></td><td><input type="checkbox" name="zissi" value="kinn5"checked id="kinn5"></td><td><input type="checkbox" name="zissi" value="do5" checked id="do5"></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>18:10~</td><td><input type="checkbox" name="zissi" value="getu6"checked id="getu6"></td><td><input type="checkbox" name="zissi" value="ka6"checked id="ka6"></td><td><input type="checkbox" name="zissi" value="sui6"checked id="sui6"></td><td><input type="checkbox" name="zissi" value="moku6"checked id="moku6"></td><td><input type="checkbox" name="zissi" value="kinn6"checked id="kinn6"></td><td><input type="checkbox" name="zissi" value="do6" checked id="do6"></td>
+                </tr>
+              </tbody>
+          </table>
+          </div>
+        </div>
+    <!--締切部分はカレンダーが双方にとって楽だとは思う-->
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label for="shimekiri">締切</label>
+              <div class="input-group">
+                <input type="text" class="form-control"  placeholder="例)1月1日" aria-describedby="sizing-addon2"　>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-4">
+            <button type="submit" class="btn btn-info">送信<i class="glyphicon glyphicon-ok"></i></button>
+          </div>
+        </div>
       </div>
-      <p>カテゴリ
-        <select name="category">
-          <option value="hikennsya">被験者</option>
-          <option value="seikyou">生協</option>
-          <option value="pc">PC(情報系)</option>
-          <option value="hozyo">授業補助</option>
-        </select>
-      </p>
-      <p>カテゴリ
-        <input type="radio" name="category" value="hikensya" id="hikensya"><label for="hikensya">被験者</label>
-        <input type="radio" name="category" value="seikyou" id="seikyou"><label for="seikyou">生協</label>
-        <input type="radio" name="category" value="PC" id="PC"><label for="PC">PC(情報系)</label>
-        <input type="radio" name="category" value="hozyo" id="hozyo"><label for="hozyo">授業補助</label>
-      </p>
-
-      <p>募集対象(条件)<textarea name="comment"cols="40" rows="1" >全学生</textarea>
-      </p>
-      <p>実施場所
-        <input type="checkbox" name="school" value="kyotanabe" id="kyotnabe"><label for="kyotanabe">京田辺</label>
-        <input type="checkbox" name="school" value="imadegawa" id="imadegawa"><label for="imadegawa">今出川</label>
-      </p>
-  <!--院生の時間割に変更する必要あり-->
-      <table rules="groups">
-        <p>実施期間</p>
-          <thead>
-            <tr>
-              <th>時間/曜日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>9:00~10:30</td><td><input type="checkbox" name="zissi" value="getu1"checked id="getu1"></td><td><input type="checkbox" name="zissi" value="ka1"checked id="ka1"></td><td><input type="checkbox" name="zissi" value="sui1"checked id="sui1"></td><td><input type="checkbox" name="zissi" value="moku1"checked id="moku1"></td><td><input type="checkbox" name="zissi" value="kinn1"checked id="kinn1"></td><td><input type="checkbox" name="zissi" value="do1" checked id="do1"></td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>10:45~12:15</td><td><input type="checkbox" name="zissi" value="getu2"checked id="getu2"></td><td><input type="checkbox" name="zissi" value="ka2"checked id="ka2"></td><td><input type="checkbox" name="zissi" value="sui2"checked id="sui2"></td><td><input type="checkbox" name="zissi" value="moku2"checked id="moku2"></td><td><input type="checkbox" name="zissi" value="kinn2"checked id="kinn2"></td><td><input type="checkbox" name="zissi" value="do2" checked id="do2"></td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>13:10~14:40</td><td><input type="checkbox" name="zissi" value="getu3"checked id="getu3"></td><td><input type="checkbox" name="zissi" value="ka3"checked id="ka3"></td><td><input type="checkbox" name="zissi" value="sui3"checked id="sui3"></td><td><input type="checkbox" name="zissi" value="moku3"checked id="moku3"></td><td><input type="checkbox" name="zissi" value="kinn3"checked id="kinn3"></td><td><input type="checkbox" name="zissi" value="do3" checked id="do3"></td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>14:55~16:25</td><td><input type="checkbox" name="zissi" value="getu4"checked id="getu4"></td><td><input type="checkbox" name="zissi" value="ka4"checked id="ka4"></td><td><input type="checkbox" name="zissi" value="sui4"checked id="sui4"></td><td><input type="checkbox" name="zissi" value="moku4"checked id="moku4"></td><td><input type="checkbox" name="zissi" value="kinn4"checked id="kinn4"></td><td><input type="checkbox" name="zissi" value="do4" checked id="do4"></td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>16:40~18:10</td><td><input type="checkbox" name="zissi" value="getu5"checked id="getu5"></td><td><input type="checkbox" name="zissi" value="ka5"checked id="ka5"></td><td><input type="checkbox" name="zissi" value="sui5"checked id="sui5"></td><td><input type="checkbox" name="zissi" value="moku5"checked id="moku5"></td><td><input type="checkbox" name="zissi" value="kinn5"checked id="kinn5"></td><td><input type="checkbox" name="zissi" value="do5" checked id="do5"></td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>18:10~</td><td><input type="checkbox" name="zissi" value="getu6"checked id="getu6"></td><td><input type="checkbox" name="zissi" value="ka6"checked id="ka6"></td><td><input type="checkbox" name="zissi" value="sui6"checked id="sui6"></td><td><input type="checkbox" name="zissi" value="moku6"checked id="moku6"></td><td><input type="checkbox" name="zissi" value="kinn6"checked id="kinn6"></td><td><input type="checkbox" name="zissi" value="do6" checked id="do6"></td>
-            </tr>
-          </tbody>
-      </table>
-  <!--締切部分はカレンダーが双方にとって楽だとは思う-->
-      <p>締切:<textarea name="simekiri"cols="10" rows="1" placeholder="例)1月1日"></textarea>
-      </p>
-      <!--新たに設定しなくてはならない-->
-      <button type="submit" class="btn btn-info">送信<i class="glyphicon glyphicon-ok"></i></button>
-    </article>
+    </form>
 
     <footer align="center">
       <a href="register.html" target="_blank">新規登録</a>
       <a href="login.html" target="_blank">ログイン</a>
       <a href="bite.html" target="_blank">バイト募集</a>
       <a href="top.html"> ホームへ</a>
-      <p>&copy;Copyright Shinjima.com all rights reserved.</p>
+      <p>Copyright&copy;2015 Hickies All Rights Reserved.</p>
     </footer>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
