@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>ログイン|Shinjima.com</title>
-    <link rel="shortcut icon" href="favicon.jpg">
+    <title>Shinjima.com</title>
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -17,9 +17,13 @@
     <![endif]-->
     <link rel="stylesheet" href="topstyle1.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   </head>
 
   <body>
+     <!--<div class="page-header">
+        <h1>Shinjima.com<small> supported by Hickies</small></h1>
+    </div>-->
     <header>
        <nav class="navbar navbar-default">
          <div class="container">
@@ -28,14 +32,15 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
-             <a class="navbar-brand" href="top.html"><img src="logo2.png"></a>
+            <a class="navbar-brand" href="top.html"><img src="logo2.png"></a>
           </div>
 
           <div class="collapse navbar-collapse target">
             <ul class="nav navbar-nav">
               <li><a href="register.html">新規登録</a></li>
-              <li class="active"><a href="login.html">ログイン</a></li>
+              <li><a href="login.html">ログイン</a></li>
               <li><a href="bite.html">バイト募集</a></li>
             </ul>
           </div>
@@ -44,22 +49,20 @@
     </header>
 
     <div id="main" class="container">
-        <h1>ログイン</h1>
+      <h1>ログイン</h1>
       <form action="" method="post">
         <div class="row">
           <div class="form-group col-md-4">
             <label for="name" maxlength="20">名前</label>
             <input type="text" class="form-control" id="name"  size="50"maxlength="30" placeholder="name">
           </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
         </div>
          
         <div class="row">
           <div class="form-group col-md-4">
             <label for="email">Email address</label>
             <input type="email" class="form-control" id="email" value="@mail4.doshisha.ac.jp" maxlength="30" placeholder="mail address">
-          </div>
+          </div>s
         </div>
         <div class="row">
           <div class="form-group col-md-4">
@@ -68,7 +71,6 @@
         </div>
       </form>
     </div>
-    
 
     <footer align="center">
       <a href="register.html" target="_blank">新規登録</a>
